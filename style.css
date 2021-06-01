@@ -1,0 +1,62 @@
+
+@font-face {
+  font-family: seven;
+  src: url(image/Seven\ Segment.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: seven,sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-face{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.center-dot{
+    position: absolute;
+    z-index: 6;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.seconds,.hour,.min {
+    height: 30%;
+    width: 7px;
+    box-sizing: border-box;
+    background-color: crimson;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    transform-origin: bottom;
+    border-radius: 100px;
+    z-index: 5;
+  }
+
+  .hour{
+    height: 20%;
+    top: 30%;
+    transform: rotateZ(45deg);
+    background-color: black;
+    z-index: 4;
+  }
+
+  .min{
+    background-color: black;
+    transform: rotateZ(-45deg);
+    z-index: 3;
+  }
+
+  
