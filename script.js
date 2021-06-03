@@ -8,9 +8,9 @@ function time(){
     const min = d.getMinutes()
     let second = d.getSeconds()
     second = timechecker(second)
-    hours.style.transform = `rotate(${hour * 30}deg)`
-    mins.style.transform = `rotate(${min * 6}deg)`
-    seconds.style.transform = `rotate(${second * 6}deg)`
+    hours.style.transform = `rotate(${(hour * 30) + 180}deg)`
+    mins.style.transform = `rotate(${(min * 6) + 180}deg)`
+    seconds.style.transform = `rotate(${(second * 6) + 180}deg)`
 }
 
 setInterval(time,1000)

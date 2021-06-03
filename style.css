@@ -25,38 +25,35 @@ body{
 
 .center-dot{
     position: absolute;
-    z-index: 6;
-    width: 20px;
-    height: 20px;
+    width: 3vw;
+    height: 3vw;
     background-color: black;
     border-radius: 50%;
+    z-index: 8;
 }
 
 .seconds,.hour,.min {
-    height: 30%;
-    width: 7px;
+    height: 20vw;
+    width: 1vw;
     box-sizing: border-box;
     background-color: crimson;
-    top: 20%;
-    left: 50%;
     position: absolute;
-    transform-origin: bottom;
+    top: 50%;  
+    left: 49.5%; 
+    transform: translate(-50%, -50%);
+    transform-origin: top;
     border-radius: 100px;
-    z-index: 5;
+    z-index: 7;
   }
 
   .hour{
-    height: 20%;
-    top: 30%;
-    transform: rotateZ(45deg);
+    height: 18%;
+    transform: rotateZ(180deg);
     background-color: black;
     z-index: 4;
   }
 
   .min{
     background-color: black;
-    transform: rotateZ(-45deg);
     z-index: 3;
   }
-
-  
